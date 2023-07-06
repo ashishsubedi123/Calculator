@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    
+   
+</head>
+
+<body>
+    <button onclick="fun()"> Click me</button>
+   <input type="text " onfocus="change_color()" onkeyup ="update()" id="field">
+   <h1 id ="heading" > This is dummy project</h1>
+  
+<script>
+    const fun=()=>{
+        console.log("hello nepal")
+    }
+    const change_color=()=>{
+        console.log("focus")
+        document.getElementById("field").style.backgroundColor="	#8B0000"; 
+    }
+    const update=()=>{
+ let data= document.getElementById('field').value 
+ document.getElementById('heading').innerHTML=data
+ //inner html change /set the html content
+
+    }
+</script>
+</body>
+</html>
